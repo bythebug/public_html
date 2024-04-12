@@ -19,7 +19,7 @@ jobs:
         username: sverma
         password: ${{ secrets.SECRETKEY }}  # Make sure to add your SSH password as a secret in your repository settings
         script: |
-          rm -rf public_html
+          rm -r public_html
 
     - name: Clone repository
       run: git clone https://github.com/bythebug/public_html
